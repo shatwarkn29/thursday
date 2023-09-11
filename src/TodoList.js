@@ -33,7 +33,7 @@ function TodoList() {
         {todos.map((todo, index) => (
           <li key={index}>
             {todo}
-            <button onClick={() => removeTodo(index)}>Remove</button>
+            <button onClick={() => removeTodo(index)}>Remove Task</button>
           </li>
         ))}
       </ul>
