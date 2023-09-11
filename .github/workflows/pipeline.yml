@@ -2,8 +2,7 @@ name: Build and Test React App
 
 on:
   push:
-    branches:
-      - main
+    branches: '*'
 
 jobs:
 
