@@ -18,9 +18,9 @@ function TodoList() {
   };
 
   return (
-    <div>
+    <div className='todolist'>
       <h1>Todo List</h1>
-      <div>
+      <div className='thing'>
         <input
           type="text"
           value={task}
@@ -29,14 +29,18 @@ function TodoList() {
         />
         <button onClick={addTodo}>Add task</button>
       </div>
-      <ul>
-        {todos.map((todo, index) => (
-          <li key={index}>
-            {todo}
-            <button onClick={() => removeTodo(index)}>Remove Task</button>
-          </li>
-        ))}
-      </ul>
+      <div className='hover'> 
+        <ul>
+          {todos.map((todo, index) => (
+            <li key={index}>
+              {todo}
+              <div className='lock'>
+                <button onClick={() => removeTodo(index)}>Remove Task</button>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 }

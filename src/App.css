@@ -3,45 +3,90 @@
   background-color:lightblue;
 }
 
-.todo-list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.App {
+  text-align: center;
 }
 
-.todo-list h1 {
-  font-size: 20px;
-  margin-bottom: 10px;
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
 }
 
-.todo-list input {
-  width: 100%;
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.todolist h1 {
+  font-size: 24px;
+  color: #333;
+  font-weight: bold;
+}
+
+.todolist .thing input {
   padding: 10px;
-  border: 1px solid #ccc;
+  font-size: 16px;
+  border: 2px solid #FFF;
+  width: 165px;
+  border-radius: 5px;
 }
 
-.todo-list button {
-  background-color: red;
-  color: yellow;
+.todolist .thing button {
   padding: 10px;
-  border: none;
+  font-size: 16px;
+  margin: 10px;
+  margin-right: 0px;
+  background-color: #0066FF;
+  color: #FFF;
+  border: 2px solid #0066FF;
+  border-radius: 5px;
+}
+
+.todolist .thing button:hover {
+  background-color: #003399;
+  border: 2px solid #003399;
   cursor: pointer;
 }
 
-.todo-list ul {
+.todolist .hover ul {
+  list-style-type: disc;
   margin: 0;
   padding: 0;
 }
 
-.todo-list li {
-  margin-bottom: 10px;
-  align-items: start;
-  color: blue
+.todolist .hover li {
+  color: #333;
+  background-color: rgba(255,255,255,.5);
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  transition: background-color .2s ease-out;
 }
 
-.todo-list li.completed {
-  text-decoration: line-through;
+.todolist .hover li:hover {
+  background-color: pink;
+  cursor: pointer;
+}
+
+.todolist .hover .lock button {
+  padding: 10px;
+  font-size: 16px;
+  margin: 10px;
+  margin-right: 0px;
+  background-color: #0066FF;
+  color: #FFF;
+  border: 2px solid #0066FF;
+  border-radius: 5px;
+}
+
+.todolist .hover .lock button:hover {
+  background-color: #003399;
+  border: 2px solid #003399;
+  cursor: pointer;
 }
