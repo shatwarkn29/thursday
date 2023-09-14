@@ -70,7 +70,7 @@
 }
 
 .todolist .hover li:hover {
-  background-color: pink;
+  background-color: whitesmoke;
   cursor: pointer;
 }
 
@@ -79,14 +79,14 @@
   font-size: 16px;
   margin: 10px;
   margin-right: 0px;
-  background-color: #0066FF;
+  background-color: goldenrod;
   color: #FFF;
   border: 2px solid #0066FF;
   border-radius: 5px;
 }
 
 .todolist .hover .lock button:hover {
-  background-color: #003399;
+  background-color: greenyellow;
   border: 2px solid #003399;
   cursor: pointer;
 }
