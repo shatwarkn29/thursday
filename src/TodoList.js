@@ -19,7 +19,7 @@ function TodoList() {
 
   return (
     <div className='todolist'>
-      <h1>Todo List Basic </h1>
+      <h1>Todo List Daily </h1>
       <div className='thing'>
         <input
           type="text"
