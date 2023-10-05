@@ -27,7 +27,7 @@ function TodoList() {
           onChange={(e) => setTask(e.target.value)}
           placeholder="Add a new task"
         />
-        <button onClick={addTodo}>Add task</button>
+        <button onClick={addTodo}>Add the Task</button>
       </div>
       <div className='hover'> 
         <ul>
@@ -35,7 +35,7 @@ function TodoList() {
             <li key={index}>
               {todo}
               <div className='lock'>
-                <button onClick={() => removeTodo(index)}>Remove Task</button>
+                <button onClick={() => removeTodo(index)}>Removing The Task</button>
               </div>
             </li>
           ))}
