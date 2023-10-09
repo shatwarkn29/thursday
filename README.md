@@ -1,10 +1,10 @@
-# Getting Started with the Create React Aapp for now
+# Getting Started with the Create React App for now
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts in here.
 
-In the project directory, you can run following:
+In the project directory, you can run:
 
 ### `npm start`
 
