@@ -35,7 +35,7 @@ function TodoList() {
             <li key={index}>
               {todo}
               <div className='lock'>
-                <button onClick={() => removeTodo(index)}>Removing The Task</button>
+                <button onClick={() => removeTodo(index)}>Removing the task</button>
               </div>
             </li>
           ))}
