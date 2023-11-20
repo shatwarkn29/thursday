@@ -13,11 +13,9 @@ jobs:
         uses: actions/checkout@v2
       - name: "Get Current Date"
         id: today
-        run: |
-          echo "date=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
+        run: echo "date=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
       - name: Use Date Output
-        run: |
-          echo "The current date is ${{ steps.today.outputs.date }}"
+        run: echo "The current date is ${{ steps.today.outputs.date }}"
       - name: Install dependencies
         run: yarn install
       - name: Build
